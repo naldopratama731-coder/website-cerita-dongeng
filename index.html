@@ -1,44 +1,72 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Website Cerita Dongeng</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        a {
-            display: block;
-            margin: 15px;
-            padding: 15px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            width: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        a:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Website Cerita Dongeng</title>
+
+  <style>
+    body{
+      font-family: Arial;
+      background:#e9eef3;
+      text-align:center;
+      padding:30px;
+    }
+
+    .box{
+      background:white;
+      width:500px;
+      margin:auto;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      color:#1e73be;
+    }
+
+    ul{
+      text-align:left;
+      font-size:18px;
+    }
+
+    a{
+      text-decoration:none;
+      color:#0a58ca;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>📚 Cerita Dongeng Anak</h1>
-    <p>Pilih cerita yang ingin dibaca:</p>
+  <div class="box">
+    <h1>Kumpulan Cerita Dongeng</h1>
+    <p>Silakan pilih cerita untuk dibaca / download:</p>
 
-    <div class="container">
-        <a href="cerita-rubah-anggur.docx.docx">🐺 Rubah dan Anggur</a>
-        <a href="cerita-singa-tikus.docx.docx">🦁 Singa dan Tikus</a>
-        <a href="cerita-kelinci-kura.docx.docx">🐢 Kelinci dan Kura-kura</a>
-    </div>
+    <ul>
+      <li>
+        <a href="cerita-kelinci-kura.docx" target="_blank">
+          Cerita Kelinci dan Kura-kura
+        </a>
+      </li>
+
+      <li>
+        <a href="cerita-rubah-anggur.docx" target="_blank">
+          Cerita Rubah dan Anggur
+        </a>
+      </li>
+
+      <li>
+        <a href="cerita-singa-tikus.docx" target="_blank">
+          Cerita Singa dan Tikus
+        </a>
+      </li>
+    </ul>
+  </div>
 
 </body>
 </html>
