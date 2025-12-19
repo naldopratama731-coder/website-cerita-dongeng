@@ -2,47 +2,92 @@
 <html>
 <head>
     <title>Website Cerita Dongeng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Penting untuk responsif -->
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Agar padding tidak menambah lebar total */
+        }
+
         body {
-            font-family: sans-serif;
-            text-align: center; /* Membuat konten berada di tengah horizontal */
-            background-color: #f0f0f0; /* Warna latar belakang */
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            min-height: 100vh; /* Mengisi tinggi layar penuh */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Mpusatkan konten secara horizontal */
+            justify-content: flex-start; /* Mulai dari atas */
+            padding: 20px;
         }
+
         h1 {
-            color: #337ab7; /* Warna judul */
-            margin-top: 30px;
+            color: #2c3e50;
+            font-size: 2.5rem; /* Ukuran judul responsif */
+            margin: 30px 0;
+            text-align: center;
+            width: 100%; /* Memenuhi lebar penuh */
         }
-        p {
-            font-size: 16px;
-            color: #555;
+
+        .pilih-cerita {
+            color: #34495e;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            text-align: center;
+            width: 100%; /* Memenuhi lebar penuh */
         }
+
         ul {
             list-style: none;
-            padding: 0;
+            width: 100%; /* Memenuhi lebar penuh */
+            max-width: 600px; /* Batas maksimal lebar daftar agar tidak terlalu lebar di laptop */
         }
+
         li {
-            margin: 10px 0;
+            margin: 15px 0;
+            width: 100%; /* Memenuhi lebar penuh */
         }
+
         a {
             text-decoration: none;
-            color: #fff; /* Warna teks tautan */
-            background-color: #337ab7; /* Warna latar belakang tautan */
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
+            color: white;
+            background-color: #3498db;
+            font-size: 1.1rem;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: block; /* Membuat tautan memenuhi lebar item daftar */
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
+
         a:hover {
-            background-color: #23527c; /* Warna latar belakang tautan saat dihover */
+            background-color: #2980b9;
+        }
+
+        /* Sesuaikan ukuran di layar kecil (HP) */
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .pilih-cerita {
+                font-size: 1.1rem;
+            }
+
+            a {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Selamat Datang di Website Cerita Dongeng</h1>
-    <p>Silakan pilih cerita yang ingin Anda baca:</p>
+    <p class="pilih-cerita">Silakan pilih cerita yang ingin Anda baca:</p>
     <ul>
-        <li><a href="cerita-kelinci-kura.docx">Cerita Kelinci dan Kura</a></li>
-        <li><a href="cerita-rubah-anggur.docx">Cerita Rubah dan Anggur</a></li>
-        <li><a href="cerita-singka-tikus.docx">Cerita Singa dan Tikus</a></li>
+        <li><a href="cerita-kelinci-kura.html">Cerita Kelinci dan Kura</a></li> <!-- Ganti .docx jadi .html jika sudah konversi -->
+        <li><a href="cerita-rubah-anggur.html">Cerita Rubah dan Anggur</a></li>
+        <li><a href="cerita-singa-tikus.html">Cerita Singa dan Tikus</a></li> <!-- Perbaiki ejaan "Singka" jadi "Singa" -->
     </ul>
 </body>
 </html>
